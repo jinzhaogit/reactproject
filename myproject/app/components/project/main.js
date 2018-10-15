@@ -37,13 +37,13 @@ export default class Prodectlist extends Component{
                 {/* 第三行 */}
                 <View style={{flexDirection:'row'}}>
                     <View style={myStyles.mybotCol}>
-                        <TouchableOpacity onPress={()=>this.handlePress('list')}>
+                        <TouchableOpacity>
                             <Image style={{width:90,height:90}} source={require("../../imgs/order.png")}></Image>
                             <Text style={{alignSelf:'center'}}>订单管理</Text>
                         </TouchableOpacity>
                     </View>
                     <View style={myStyles.mybotCol}>
-                        <TouchableOpacity onPress={()=>this.handlePress('list')}>
+                        <TouchableOpacity onPress={()=>this.handlePress('user')}>
                             <Image style={{width:90,height:90}} source={require("../../imgs/user.png")}></Image>
                             <Text style={{alignSelf:'center'}}>用户管理</Text>
                         </TouchableOpacity>
@@ -58,7 +58,7 @@ export default class Prodectlist extends Component{
                         </TouchableOpacity>
                     </View>
                     <View style={myStyles.mybotCol}>
-                        <TouchableOpacity onPress={()=>this.handlePress('list')}>
+                        <TouchableOpacity>
                             <Image style={{width:90,height:90}} source={require("../../imgs/setting.png")}></Image>
                             <Text style={{alignSelf:'center'}}>设置</Text>
                         </TouchableOpacity>
